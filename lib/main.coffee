@@ -28,7 +28,6 @@ module.exports =
 
       paneElement = atom.views.getView(pane)
       paneElement.insertBefore(tabBarView, paneElement.firstChild)
-      # paneElement.insertBefore(mruListView, paneElement.firstChild)
 
       @tabBarViews.push(tabBarView)
       pane.onDidDestroy => _.remove(@tabBarViews, tabBarView)
